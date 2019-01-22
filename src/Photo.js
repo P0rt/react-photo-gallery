@@ -11,6 +11,10 @@ const Photo = ({ index, onClick, photo, margin, direction, top, left }) => {
     imgStyle.top = top;
   }
 
+  if (direction === 'row') {
+    imgStyle.flex = '0 0 auto';
+  }
+
   const handleClick = event => {
     onClick(event, { photo, index });
   };

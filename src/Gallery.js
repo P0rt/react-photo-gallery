@@ -63,7 +63,7 @@ class Gallery extends React.Component {
     let galleryStyle, thumbs;
 
     if (direction === 'row') {
-      galleryStyle = { display: 'flex', flexWrap: 'wrap', flexDirection: 'row' };
+      galleryStyle = {display: 'flex', flexWrap: 'nowrap', flexDirection: 'row', overflowX: 'auto', alignItems: 'center'};
       thumbs = computeSizes({ width, columns, margin, photos });
     }
     if (direction === 'column') {
