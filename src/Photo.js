@@ -13,7 +13,6 @@ const Photo = ({ index, onClick, photo, margin, direction, top, left }) => {
 
   if (direction === 'row') {
     imgStyle.flex = '0 0 auto';
-    imgStyle.maxHeight = '500px';
   }
 
   const handleClick = event => {
